@@ -181,3 +181,42 @@ Para a função de copiar um arquivo, utilizamos o comando ``copy``, como em ``c
 ### Limpando o terminal
 Com o tempo, o terminal vai ficar poluído com comandos antigos, que tiram o foco e dificultam a legibilidade. Para limpar o terminal, utilizamos ``cls`` (clear screen).
 
+## Tema 6
+
+Comando tar: compactando arquivos
+Esse comando possui duas flags, ou parâmetros:
+
+-``C``: indica que a ação que realizaremos naquele momento é a compactação de arquivos;
+
+-``F``: para nomear o arquivo compactado ao final.
+
+Vamos digitar esse comando no nosso terminal e, para indicar que queremos inserir algumas informações especiais, usamos a flag. Com ela, conseguimos utilizar várias funcionalidades com o mesmo comando.
+
+Por exemplo, queremos usar o comando tar para compactar. Mas, com esse mesmo comando, podemos mudar as flags para tanto descompactar como listar o conteúdo de um arquivo compactado.
+
+Para compactar, digitamos um hífen (``-``) indicando que queremos inserir uma flag para esse comando, junto da letra ``c``, flag de compactação. Damos um espaço e digitamos mais um hífen com a flag ``f``, de nomeação: tar ``-c`` ``-f``
+
+Podemos construir o comando desse jeito ou unificar as flags, digitando o hífen apenas uma vez e inserindo as flags em sequência: tar ``-cf``.
+
+O próximo parâmetro que esse comando exige é o nome do arquivo compactado. Vamos nomeá-lo como "notas" junto da extensão ``.zip``, usada para compactar arquivos.
+
+Por fim, passamos o que, afinal, queremos compactar. No caso, são os nossos dois arquivos XML: ``NF001.xml`` e ``NF002.xml``.
+
+Nosso comando ficou assim:
+
+```
+Desktop>tar -cf notas.zip NF001.xml NF002.xml
+```
+Agora, podemos apertar "Enter" para executá-lo. Não teremos nenhuma resposta do terminal; mas, se digitarmos o comando dir para verificar o conteúdo do Desktop, encontraremos:
+
+```
+Pasta de C:\Users\Emerson\Desktop
+
+26/12/2022 10:13 83 NF001.xml
+26/12/2022 10:13 83 NF002.xml
+26/12/2022 15:43 3.072 notas.zip
+3 arquivo(s) 3.238 bytes
+```
+
+Ou seja, o nosso arquivo compactado ``notas.zip`` foi criado.
+
