@@ -297,3 +297,154 @@ IF %ERRORLEVEL% NEQ 0 (echo "Erro na execução do script.")
 E, por fim, fazemos uma condição representada pelo ``IF``, indicando que se o conteúdo da variável ``ERRORLEVEL`` não for igual (``NEQ``, ou seja, Not EQual to) a zero, nós exibimos uma mensagem à pessoa informando que não foi possível encontrar os arquivos.
 
 Quase todos os aplicativos e utilitários definirão um código de saída representado pela variável ``ERRORLEVEL``. Quando seu valor é zero, indica que houve sucesso na execução. Como estamos avaliando o caso de ser diferente de zero, estamos tratando justamente quando houver algum erro.
+
+## Tema 8
+
+Quando trabalhamos com script é comum precisarmos armazenar uma informação de forma temporária.
+
+Para isso, nosso computador oferece um espaço de memória chamado variávies, justamente para podermos colocar uma informação no mesmo espaço de memória e depois sobrepor com outra informação.
+
+Isso acontece quando criamos nossos scripts e também em programas externos, como Java e Python, por exemplo.
+
+Aprenderemos de forma prática como trabalhar com essas variáveis. Para isso, vamos criar um script no qual armazenaremos uma variável chamada nome com uma informação e outra variável e-mailcom outra informação. Por fim, exibiremos uma mensagem com essas duas variáveis para o usuário final.
+
+André: Bacana, Emerson. E como criamos uma variável no terminal do Windows Prompt?
+
+Emerson: Primeiro apertamos a tecla "Windows". No campo de busca, digitamos "cmd" e apertamos a tecla "Enter". Na área de trabalho escrevemos cd Desktop e apertamos "Enter" novamente.
+
+Microsoft Windows [versão 10.0.2200.1335]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Emerson>cd DesktopCOPIAR CÓDIGO
+Feito isso, temos:
+
+Microsoft Windows [versão 10.0.2200.1335]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Emerson>cd\Desktop>COPIAR CÓDIGO
+Agora, para criar nossa primeira variável precisaremos de um novo comando, o set. Em seguida ele precisa receber o nome da variável que queremos criar. Nesse caso ela se chamará mensagem.
+
+Depois, inserimos o sinal = para atribuir, ou seja, dar um valor a essa variável e escrevemos Olá Mundo!
+
+Microsoft Windows [versão 10.0.2200.1335]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Emerson>cd Desktop
+
+C:\Users\Emerson>cd\Desktop>set mensagem=Olá Mundo!COPIAR CÓDIGO
+Em seguida, apertamos a tecla "Enter" e assim temos a variável criada.
+
+André: Mas, como conseguimos acessar o conteúdo que você atribuiu a essa variável mensagem ?
+
+Emerson: Para exibirmos um conteúdo no nosso Prompt, podemos usar o comando echo, como aprendemos anteriormente. Porém, para exibirmos o conteúdo dentro de uma variável precisamos colocá-la entre porcentagens.
+
+Inserir uma variável entre símbolos de % permite a exibição do seu conteúdo, quando utilizado com o comando echo.
+
+Então, digitamos o sinal %, depois escrevemos o nome da variável mensagem e novamente o sinal %.
+
+// Código omitido
+
+C:\Users\Emerson>cd\Desktop>echo %mensagem%COPIAR CÓDIGO
+Ao apertar a tecla "Enter" ele exibira a mensagem:
+
+Olá Mundo!
+
+Se escrevermos %MENSAGEM%, com letras maiúsculas, teremos o mesmo retorno.
+
+André: Agora que aprendemos a criar variáveis, vamos criar um script que permitirá a criação de um cadastro do nome e e-mail no Prompt.
+
+Emerson: Vamos, sim. Para isso, abrimos o bloco de notas escrevendo notepade seguido da tecla "Enter".
+
+C:\Users\Emerson>cd\Desktop>notepadCOPIAR CÓDIGO
+Feito isso, o bloco de notas abre. Agora, vamos escrever todo o script e depois explicar linha por linha para entendermos exatamente o que ele faz.
+
+@echo off 
+rem limpando a tela
+cls
+set /p nome=Digite seu nome completo =
+set /p email=Digite seu e-mail principal =
+pause
+echo Pressione [enter] para continuar
+echo ..................................................................................
+echo Seu nome é %nome% e seu e-mail %email%COPIAR CÓDIGO
+Na primeira linha colocamos @echo off. Aprendemos anteriormente que ele serve para não exibir o comando e sim o resultado desse comando no nosso terminal.
+
+Em seguida temos o rem Limpando a tela. Esse comando passa uma mensagem para quem está editando nosso script, ou seja, essa informação não será exibida, ela só ficará visível para a pessoa que for editar entender o próximo comando que é o cls, que limpará todo nosso terminal.
+
+Na linha de baixo utilizamos o set para inserir uma informação em uma variável. Porém, nesse caso passamos parâmetro /p que permite com que o usuário informe um dado e ele seja armazenado na variável nome. Para o usuário aparecerá a mensagem Digite seu nome.
+
+Sendo assim, o terminal irá esperar pela mensagem que será digitada pelo usuário. Depois que ele fizer isso e apertar a tecla "Enter" a informação será armazenada.
+
+O mesmo acontece com o e-mail, que aparecerá para o usuário a mensagem Digite seu e-mail e a mensagem digitada será salva em e-mail.
+
+Depois disso, damos um pause, simulando o comportamento de um terminal, que irá pausar e exibir a mensagem Pressione [enter] para continuar. Em seguida, aparecerá uma sequência de pontilhados e a informação final Seu nome é %nome% e seu e-mail %email%. Como estão entre sinais de porcentagem vão exibir o conteúdo das variáveis.
+
+Para checar se está funcionando, na barra de menu, localizada no canto superior esquerdo da tela, clicamos em "Arquivo > Salvar como". Nomeamos de "script.bat" e clicamos em "Salvar".
+
+Fechamos o bloco de notas e voltamos no nosso cmd. Nele, digitamos .\script.bat e apertamos "Enter".
+
+C:\Users\Emerson>cd\Desktop>.\script.batCOPIAR CÓDIGO
+Perceba que nosso terminal foi limpo e a primeira mensagem que aparece é Digite deu nome=.
+
+Agora, escrevemos o nome Suellen e apertamos "Enter".
+
+Digite seu nome=SuellenCOPIAR CÓDIGO
+Em seguida aparece a mensagem Digite seu e-mail=. Preenchemos o campo com `suellen@email.com`.
+
+Digite seu e-mail=suellen@email.comCOPIAR CÓDIGO
+A mensagem seguinte é Pressione qualquer tecla para continuar..., uma mensagem padrão quando usamos o pause.
+
+Digite seu nome=Suellen
+Digite seu e-mail=suellen@email.com
+Pressione qualquer tecla para continuar...
+Pressione [enter] para continuar
+COPIAR CÓDIGO
+Feito isso, exibe a seguinte mensagem:
+
+Seu nome é Suellen e seu e-mail suellen@email.com
+
+André: Emerson, o que você acha de fazermos uma edição nesse script e deixar apenas a mensagem do pause para não ficar redundante?
+
+Emerson: Vamos editá-lo, então. Para isso, vamos digitamos notepad script.bat e apertamos "Enter".
+
+Com o bloco de notas aberto, removemos a linha echo Pressione [enter] para continuar. Salvamos e fechamos.
+
+Em seguida, voltamos para o cmd. Utilizamos a seta para cima do teclado para encontrar o .\script.bar
+
+C:\Users\Emerson>cd\Desktop>.\script.batCOPIAR CÓDIGO
+Executamos apertando "Enter". Agora, vamos repetir o processo de preenchimento.
+
+Em nome escrevemos Andre e em e-mail `andre@email.com. Aparece a mensagemPressione qualquer tecla para continuar` e feito isso obtemos o resultado.
+
+Digite seu nome=Andre
+Digite seu e-mail=andre@email.com
+Pressione qualquer tecla para continuar...
+..................................................................................
+Seu nome é Andre e seu e-mail andre@email.com
+COPIAR CÓDIGO
+André: Muito bom, Emerson! Aprendemos muitas coisas. Você pode fazer um resumo de tudo?
+
+Emerson: Claro, vamos lá. Começamos aprendendo a importância das variáveis, uma forma de trazer dinamismo quando trabalhamos com scrips nossos ou externos.
+
+Com essas variáveis conseguimos armazenar informações que podemos exibir por meio do comando echo e a variável entre o símbolo de porcentagem.
+
+Além disso, aprendemos como criar uma variável por meio do comando set. Para colocar tudo isso em prática, criamos um script para conseguir exibir para o usuário final a informação de nome e e-mail digitado.
+
+André: Emerson, você pode executar novamente a exibição da variável mensagem no terminal?
+
+Emerson: Vamos lá. Para isso digitamos echo %mensagem% e apertamos "Enter".
+
+C:\Users\Emerson>echo %mensagem%COPIAR CÓDIGO
+Feito isso, temos o seguinte retorno:
+
+Olá Mundo!
+
+André: Bacana! Agora, abre outro terminal e tenta acessar essa variável também.
+
+Emerson: Apertamos a tecla "Windows", digitamos "cmd" e "Enter". Agora, digitamos echo %mensagem%.
+
+Ele não exibe o conteúdo de uma variável, mas sim a própria mensagem que digitamos.
+
+%mensagem%
+
+André: É importante lembrarmos que essa variável só existe no terminal que criamos. Nesse segundo terminal que abrimos agora ela não existe, por isso tivemos esse retorno. Além disso, outro ponto importante é que as variáveis são temporárias, ou seja, se você fechar o primeiro terminal e tentar abrir de novo, você não terá acesso à variável que criou, pois ela não existirá mais.
