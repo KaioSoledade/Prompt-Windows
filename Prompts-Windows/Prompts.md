@@ -74,7 +74,8 @@ O comando `cd` (change directory) é uma das funcionalidades essenciais do Promp
 
 O comando `cd` é uma ferramenta poderosa para a navegação eficiente entre diretórios no Prompt de Comando do Windows. Com este guia, você está pronto para explorar e trabalhar com facilidade nos diretórios do sistema. Lembre-se de praticar e experimentar com os comandos para se tornar mais confiante no uso do `cd`.
 
-## Tema 2
+## Tema `Dir`
+
 **Guia para Utilizar o Comando `dir` no Prompt de Comando do Windows**
 
 O comando `dir` é uma ferramenta essencial do Prompt de Comando do Windows que permite listar o conteúdo de um diretório específico. Com este comando, você pode visualizar os arquivos e pastas presentes em um diretório, bem como suas propriedades e informações relevantes. A seguir, vamos aprender como utilizar o `dir` de forma prática:
@@ -147,70 +148,185 @@ O comando `dir` é uma ferramenta poderosa para visualizar e gerenciar o conteú
 
 ![imagem de estrutura de pastas do sistema, usando dir](Imagens/DIR-CMD.png)
 
-## Tema 3
+## Tema `More`
 
-O comando ``more`` funciona de forma semelhante ao comando ``type``, com a diferença de exibir página por página do arquivo no terminal, em vez de mostrá-lo todo de uma vez.
+**Guia para Utilizar o Comando `more` no Prompt de Comando do Windows**
 
-Para utilizar o comando, utilizamos o ``more`` seguido do nome do arquivo que se deseja exibir o conteúdo. Por exemplo: ``more arquivo.txt``.
+O comando `more` é uma ferramenta útil do Prompt de Comando do Windows que permite visualizar o conteúdo de arquivos de texto de forma paginada. Ele é especialmente útil quando você deseja ler arquivos extensos linha por linha, evitando que o conteúdo se sobreponha rapidamente no prompt. A seguir, vamos aprender como utilizar o `more` de forma prática:
 
-Esse comando é muito útil quando queremos exibir arquivos de texto com várias linhas para ler lentamente, em vez de abri-lo todo no terminal de uma única vez.
+1. **Exibindo o Conteúdo Completo de um Arquivo de Texto:**
+   Para visualizar o conteúdo completo de um arquivo de texto no Prompt de Comando, basta digitar o seguinte comando, seguido do nome do arquivo:
+   ```
+   more nome_do_arquivo.txt
+   ```
+   Ao pressionar "Enter", o Prompt de Comando exibirá o conteúdo completo do arquivo. Você pode navegar pelas linhas usando as teclas "Seta para Baixo" ou "Barra de Espaço".
 
-Um exemplo disso é quando queremos ler os logs de uma aplicação que está em um servidor na nuvem; neste caso, é preciso ler grandes arquivos de texto linha a linha para identificar um bug ou realizar algum teste.
+2. **Visualizando o Conteúdo de Forma Paginada:**
+   Por padrão, o `more` exibe o conteúdo do arquivo de forma paginada, mostrando uma tela de cada vez. Quando o final da primeira tela é atingido, você pode pressionar a tecla "Barra de Espaço" para avançar uma tela, ou a tecla "Enter" para avançar uma linha por vez.
 
-## Tema 4
+3. **Navegando Pelo Conteúdo:**
+   Além das teclas mencionadas acima, você pode usar as teclas "Seta para Cima" para voltar uma linha, e "Q" para sair do modo de visualização e retornar ao prompt do comando.
 
-Alguns dos principais comandos usados no dia a dia, porém, o cmd oferece diversos outros comandos, como:
+4. **Utilizando o Redirecionamento de Saída:**
+   O comando `more` também pode ser usado em conjunto com o redirecionamento de saída para exibir o conteúdo de um arquivo paginado em um novo arquivo de texto. Por exemplo:
+   ```
+   more nome_do_arquivo.txt > arquivo_paginado.txt
+   ```
+   Esse comando criará um novo arquivo chamado "arquivo_paginado.txt" contendo o conteúdo do arquivo original exibido de forma paginada.
 
-``fc``: File Compare ou “Comparação de Arquivos” (em português); compara dois arquivos ou grupos de arquivos e mostra as diferenças entre eles. Caso não haja diferença, uma mensagem é exibida informando que nenhuma diferença foi encontrada. Por exemplo:
-```
-C:\Users\Emerson\Desktop>type a.txt
-texto a
+5. **Exemplos Práticos:**
+   - Visualizar o conteúdo completo de um arquivo:
+     ```
+     more texto.txt
+     ```
+   - Visualizar o conteúdo de um arquivo paginado:
+     ```
+     more longo_texto.txt
+     ```
+   - Navegar pelo conteúdo paginado:
+     ```
+     more arquivo.txt
+     ```
+     (Pressione "Barra de Espaço" para avançar, "Seta para Cima" para voltar, "Q" para sair)
+   - Redirecionar a saída paginada para um novo arquivo:
+     ```
+     more conteudo.txt > paginado.txt
+     ```
 
-C:\Users\Emerson\Desktop>type b.txt
-texto b
+O comando `more` é uma ferramenta útil para visualizar o conteúdo de arquivos de texto no Prompt de Comando do Windows. Com ele, você pode ler arquivos extensos de forma mais confortável e controlada, além de utilizar opções de redirecionamento de saída para criar novos arquivos com o conteúdo paginado. Experimente e aproveite essa funcionalidade para facilitar a leitura de arquivos em linha de comando!
 
-C:\Users\Emerson\Desktop>fc a.txt b.txt
-Comparando os arquivos a.txt e B.TXT
-***** a.txt
-texto a
-***** B.TXT
-texto b
-*****
+## Tema `Tree`
+**Guia para Utilizar o Comando `tree` no Prompt de Comando do Windows**
 
-C:\Users\Emerson\Desktop>fc a.txt a.txt
-Comparando os arquivos a.txt e A.TXT
-FC: nenhuma diferença encontrada
-```
+O comando `tree` é uma funcionalidade útil do Prompt de Comando do Windows que permite visualizar a estrutura hierárquica de pastas e subpastas em um diretório específico. Ele cria uma representação gráfica em forma de árvore, facilitando a compreensão da organização dos arquivos e diretórios em uma determinada pasta. A seguir, vamos aprender como utilizar o `tree` de forma prática:
+
+1. **Visualizando a Estrutura de Diretórios do Diretório Atual:**
+   Para visualizar a estrutura de diretórios do diretório atual, abra o Prompt de Comando e digite o seguinte comando:
+   ```
+   tree
+   ```
+   Ao pressionar "Enter", o Prompt de Comando mostrará uma representação gráfica da estrutura de pastas e subpastas a partir do diretório em que você está posicionado.
+
+2. **Visualizando a Estrutura de Diretórios de um Diretório Específico:**
+   Você também pode utilizar o comando `tree` para visualizar a estrutura de um diretório específico. Basta fornecer o caminho absoluto ou relativo do diretório após o comando `tree`. Por exemplo:
+   ```
+   tree C:\Exemplo\Pasta
+   ```
+   Esse comando exibirá a representação gráfica da estrutura de pastas e subpastas a partir do diretório "Pasta" localizado no caminho C:\Exemplo.
+
+3. **Limitando a Profundidade da Visualização:**
+   Por padrão, o `tree` exibe a estrutura de pastas e subpastas completa, até o nível mais profundo. No entanto, você pode limitar a profundidade da visualização utilizando a opção `/A` seguida do número de níveis desejados. Por exemplo:
+   ```
+   tree /A 2
+   ```
+   Esse comando exibirá a estrutura de diretórios até o segundo nível de profundidade.
+
+4. **Excluindo Arquivos da Visualização:**
+   O `tree` também permite excluir os arquivos da visualização, exibindo apenas a estrutura de diretórios. Para isso, utilize a opção `/F`:
+   ```
+   tree /F
+   ```
+   Isso mostrará apenas as pastas presentes na estrutura hierárquica.
+
+5. **Copiando a Saída para a Área de Transferência:**
+   Caso deseje copiar a saída do `tree` para a área de transferência, você pode redirecionar a saída para o comando `clip` usando o operador de redirecionamento `|`. Por exemplo:
+   ```
+   tree | clip
+   ```
+   Isso copiará a representação gráfica da estrutura de diretórios para a área de transferência, permitindo colá-la em outro aplicativo, como um editor de texto ou planilha.
+
+6. **Exemplos Práticos:**
+   - Visualizar a estrutura de diretórios do diretório atual:
+     ```
+     tree
+     ```
+   - Visualizar a estrutura de diretórios de um diretório específico:
+     ```
+     tree C:\Exemplo\Pasta
+     ```
+   - Limitar a visualização a dois níveis de profundidade:
+     ```
+     tree /A 2
+     ```
+   - Excluir arquivos da visualização:
+     ```
+     tree /F
+     ```
+   - Copiar a saída para a área de transferência:
+     ```
+     tree | clip
+     ```
+
+O comando `tree` é uma ferramenta valiosa para visualizar e compreender a organização de pastas e subpastas em um diretório. Ao utilizar suas opções, você pode adaptar a visualização de acordo com suas necessidades e tornar a navegação e a análise da estrutura de diretórios mais eficientes. Pratique com diferentes diretórios e explore todas as possibilidades que o `tree` tem a oferecer!
 
 
-``systeminfo``: como o nome do comando sugere, ele traz informações em detalhes sobre o seu Windows.
+## Tema `fc`
 
-``rmdir``: vimos o mkdir para criar um diretório, mas caso queiramos excluí-lo, usamos o rmdir (remove directory ou, em português, remover diretório).
+**Guia para Utilizar o Comando `fc` no Prompt de Comando do Windows**
 
-``shutdown``: permite desligar ou reiniciar o computador de forma imediata ou agendada.
+O comando `fc` (File Compare) é uma ferramenta do Prompt de Comando do Windows que permite comparar o conteúdo de dois arquivos de texto e exibir as diferenças entre eles. Ele é especialmente útil para verificar se dois arquivos são idênticos ou para identificar alterações específicas entre eles. A seguir, vamos aprender como utilizar o `fc` de forma prática:
 
-``date``: exibe a data atual e permite alterá-la. Por exemplo:
+1. **Comparando Dois Arquivos:**
+   Para comparar dois arquivos de texto, digite o seguinte comando no Prompt de Comando:
+   ```
+   fc nome_do_arquivo1.txt nome_do_arquivo2.txt
+   ```
+   O Prompt de Comando exibirá as diferenças encontradas entre os dois arquivos, se houver. Caso não haja nenhuma diferença, uma mensagem informando que "nenhuma diferença foi encontrada" será exibida.
 
-```
-C:\Users\Emerson\Desktop>date
-Data atual: 04/01/2023
-Digite a nova data: (dd-mm-aa)  _
-```
+2. **Formato da Saída:**
+   Por padrão, o `fc` exibe as diferenças entre os arquivos usando o seguinte formato:
+   ```
+   ***** nome_do_arquivo1.txt
+   linha1
+   linha2
+   ...
+   linhaN
+   ***** nome_do_arquivo2.txt
+   linha1
+   linha2
+   ...
+   linhaN
+   *****
+   ```
+   As linhas que são idênticas nos dois arquivos não são exibidas na saída. Apenas as linhas diferentes são apresentadas para facilitar a análise.
 
-``find``: busca uma sequência de texto em um arquivo ou arquivos. Por exemplo:
-```
-C:\Users\Emerson\Desktop>type exemplo.txt
-Estou muito feliz, pois estou aprendendo mais sobre o prompt de comando
+3. **Comparando Diferentes Formatos de Linha:**
+   Se os arquivos comparados tiverem formatos de linha diferentes (por exemplo, um arquivo com quebra de linha Unix e outro com quebra de linha Windows), o `fc` pode retornar uma mensagem de erro indicando que os arquivos não são comparáveis diretamente. Nesse caso, você pode usar a opção `/B` para realizar uma comparação binária, ignorando as diferenças de formato de linha:
+   ```
+   fc /B nome_do_arquivo1.txt nome_do_arquivo2.txt
+   ```
 
-C:\Users\Emerson\Desktop>find “triste” exemplo.txt
-- - - - - - - - - -  EXEMPLO.TXT
+4. **Comparando Caracteres Especiais e Espaços em Branco:**
+   Por padrão, o `fc` realiza uma comparação entre os arquivos sem levar em conta caracteres especiais e espaços em branco no início e no final das linhas. Caso deseje realizar uma comparação sensível a essas diferenças, você pode usar a opção `/W`:
+   ```
+   fc /W nome_do_arquivo1.txt nome_do_arquivo2.txt
+   ```
 
-C:\Users\Emerson\Desktop>find “feliz” exemplo.txt
-- - - - - - - - - -  EXEMPLO.TXT
-    Estou muito feliz, pois estou aprendendo mais sobre o prompt de comando
-```
-    
-``exit``: fecha o cmd.
+5. **Redirecionamento de Saída:**
+   Assim como em outros comandos do Prompt de Comando, você pode redirecionar a saída do `fc` para um arquivo de texto. Por exemplo, para salvar a saída da comparação em um arquivo chamado "diferencas.txt", você pode usar o seguinte comando:
+   ```
+   fc arquivo1.txt arquivo2.txt > diferencas.txt
+   ```
+
+6. **Exemplos Práticos:**
+   - Comparar dois arquivos:
+     ```
+     fc arquivo1.txt arquivo2.txt
+     ```
+   - Comparar dois arquivos com formato de linha diferente:
+     ```
+     fc /B arquivo1.txt arquivo2.txt
+     ```
+   - Comparar dois arquivos sensíveis a caracteres especiais e espaços em branco:
+     ```
+     fc /W arquivo1.txt arquivo2.txt
+     ```
+   - Comparar e redirecionar a saída para um arquivo:
+     ```
+     fc arquivo1.txt arquivo2.txt > resultado.txt
+     ```
+
+O comando `fc` é uma ferramenta útil para comparar o conteúdo de dois arquivos de texto e identificar diferenças entre eles. Utilize as opções disponíveis conforme a necessidade do seu trabalho e aproveite essa funcionalidade para analisar e verificar a integridade dos arquivos no Prompt de Comando do Windows!
 
 ## Tema 5
 
