@@ -75,18 +75,77 @@ O comando `cd` (change directory) é uma das funcionalidades essenciais do Promp
 O comando `cd` é uma ferramenta poderosa para a navegação eficiente entre diretórios no Prompt de Comando do Windows. Com este guia, você está pronto para explorar e trabalhar com facilidade nos diretórios do sistema. Lembre-se de praticar e experimentar com os comandos para se tornar mais confiante no uso do `cd`.
 
 ## Tema 2
-Quando estamos trabalhando com o prompt de comando temos à disposição diversos comandos. Um dos mais interessantes é o comando tree, que nos mostra a estrutura de pastas do sistema.
+**Guia para Utilizar o Comando `dir` no Prompt de Comando do Windows**
 
-Vamos fazer mais um teste! No prompt, digite o comando tree:
+O comando `dir` é uma ferramenta essencial do Prompt de Comando do Windows que permite listar o conteúdo de um diretório específico. Com este comando, você pode visualizar os arquivos e pastas presentes em um diretório, bem como suas propriedades e informações relevantes. A seguir, vamos aprender como utilizar o `dir` de forma prática:
 
+1. **Listando o Conteúdo do Diretório Atual:**
+   Para visualizar o conteúdo do diretório atual, basta abrir o Prompt de Comando e digitar o seguinte comando:
+   ```
+   dir
+   ```
+   Ao pressionar "Enter", o Prompt de Comando mostrará uma lista detalhada de todos os arquivos e pastas presentes no diretório em que você está posicionado.
 
+2. **Listando o Conteúdo de um Diretório Específico:**
+   Para listar o conteúdo de um diretório específico, você precisa fornecer o caminho absoluto ou relativo do diretório após o comando `dir`. Por exemplo:
+   ```
+   dir C:\Exemplo\Pasta
+   ```
+   Esse comando exibirá a lista de arquivos e pastas dentro do diretório "Pasta" localizado no caminho C:\Exemplo.
 
-![imagem de estrutura de pasta di sistema](Imagens/image1.png)
+3. **Opções para Exibir Detalhes:**
+   O comando `dir` pode ser usado com diversas opções para exibir informações adicionais sobre os arquivos e pastas listados. Algumas opções úteis são:
+   - `/W`: Exibe a lista em formato de colunas.
+   - `/P`: Exibe a lista por páginas, pausando após cada tela cheia.
+   - `/A`: Exibe arquivos e pastas ocultos.
+   - `/S`: Lista o conteúdo de forma recursiva, mostrando também o conteúdo de subpastas.
 
+4. **Filtrando a Listagem:**
+   Você pode filtrar a listagem de arquivos usando caracteres curinga, como `*` e `?`, para corresponder a nomes de arquivo específicos. Por exemplo:
+   ```
+   dir *.txt
+   ```
+   Isso exibirá apenas os arquivos com extensão ".txt" no diretório atual.
 
-Dependendo do diretório atual, muitas informações podem aparecer; mas, repare que o comando tree mostra as pastas e subpastas organizadas em uma árvore.
+5. **Redirecionando a Saída:**
+   Assim como outros comandos, você pode redirecionar a saída do comando `dir` para um arquivo de texto, em vez de exibi-la no prompt. Basta usar o operador de redirecionamento `>` seguido do nome do arquivo. Por exemplo:
+   ```
+   dir > lista.txt
+   ```
+   Esse comando criará um arquivo chamado "lista.txt" contendo a lista de arquivos e pastas do diretório atual.
 
-O tree pode ser útil para entender a estrutura de um projeto. Com esse comando, você já pode ver facilmente como o projeto está organizado! É um recurso muito útil!
+6. **Ordenando a Listagem:**
+   Se você deseja ordenar a lista de arquivos, pode usar a opção `/O`. Por exemplo, para listar os arquivos por tamanho, use:
+   ```
+   dir /O:S
+   ```
+   Isso classificará os arquivos por tamanho, mostrando os maiores primeiro.
+
+7. **Exemplos Práticos:**
+   - Listar o conteúdo do diretório atual:
+     ```
+     dir
+     ```
+   - Listar o conteúdo do diretório "Downloads":
+     ```
+     dir C:\Users\SeuUsuario\Downloads
+     ```
+   - Listar arquivos com extensão ".docx" no diretório atual:
+     ```
+     dir *.docx
+     ```
+   - Listar conteúdo de forma recursiva, incluindo subpastas:
+     ```
+     dir /S
+     ```
+   - Redirecionar a listagem para um arquivo de texto:
+     ```
+     dir > lista_de_arquivos.txt
+     ```
+
+O comando `dir` é uma ferramenta poderosa para visualizar e gerenciar o conteúdo de diretórios no Prompt de Comando do Windows. Experimente as opções disponíveis e torne-se mais eficiente em sua navegação e organização de arquivos e pastas. Pratique regularmente e explore todas as funcionalidades que o `dir` tem a oferecer!
+
+![imagem de estrutura de pastas do sistema, usando dir](Imagens/DIR-CMD.png)
 
 ## Tema 3
 
