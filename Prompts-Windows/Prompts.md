@@ -341,3 +341,16 @@ O comando `systeminfo` é uma ferramenta do Prompt de Comando do Windows que per
    ```
    Ao pressionar "Enter", o Prompt de Comando exibirá uma lista detalhada com várias informações sobre o sistema operacional e o hardware.
 
+2. **Filtrando as Informações:**
+   A saída do comando `systeminfo` pode ser extensa, especialmente em computadores com muitos componentes e atualizações. Para tornar a visualização mais fácil, você pode utilizar o redirecionamento de saída e o comando `find` para filtrar as informações por palavra-chave específica. Por exemplo, para exibir apenas informações sobre a placa de rede, você pode usar o seguinte comando:
+   ```
+   systeminfo | find "Adaptador"
+   ```
+
+3. **Exportando as Informações para um Arquivo de Texto:**
+   Para salvar as informações exibidas pelo `systeminfo` em um arquivo de texto, você pode utilizar o redirecionamento de saída para criar um novo arquivo. Por exemplo:
+   ```
+   systeminfo > informacoes_do_sistema.txt
+   ```
+   Isso criará um arquivo chamado "informacoes_do_sistema.txt" contendo todas as informações exibidas pelo comando.
+
