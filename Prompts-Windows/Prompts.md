@@ -354,3 +354,29 @@ O comando `systeminfo` é uma ferramenta do Prompt de Comando do Windows que per
    ```
    Isso criará um arquivo chamado "informacoes_do_sistema.txt" contendo todas as informações exibidas pelo comando.
 
+4. **Obtendo Informações Específicas:**
+   O `systeminfo` oferece uma variedade de informações detalhadas sobre o sistema, como nome do host, versão do sistema operacional, data de instalação, hotfixes instalados, memória física, entre outros. Para visualizar informações específicas, você pode usar a opção `/fo` para formatar a saída em um estilo específico, como `TABLE` (tabela), `LIST` (lista) ou `CSV` (valores separados por vírgula). Por exemplo:
+   ```
+   systeminfo /fo table
+   ```
+
+5. **Exemplos Práticos:**
+   - Exibir todas as informações do sistema:
+     ```
+     systeminfo
+     ```
+   - Filtrar informações sobre a placa de rede:
+     ```
+     systeminfo | find "Adaptador"
+     ```
+   - Exportar todas as informações para um arquivo de texto:
+     ```
+     systeminfo > informacoes_do_sistema.txt
+     ```
+   - Exibir informações em formato de tabela:
+     ```
+     systeminfo /fo table
+     ```
+
+O comando `systeminfo` é uma ferramenta poderosa para obter informações detalhadas sobre o sistema operacional e o hardware do seu computador diretamente no Prompt de Comando do Windows. Utilize as opções disponíveis para filtrar e exportar as informações conforme suas necessidades de análise e diagnóstico. Aproveite essa funcionalidade para conhecer melhor o seu sistema e solucionar problemas de forma mais eficiente!
+
