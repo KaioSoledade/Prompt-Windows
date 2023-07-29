@@ -380,3 +380,16 @@ O comando `systeminfo` é uma ferramenta do Prompt de Comando do Windows que per
 
 O comando `systeminfo` é uma ferramenta poderosa para obter informações detalhadas sobre o sistema operacional e o hardware do seu computador diretamente no Prompt de Comando do Windows. Utilize as opções disponíveis para filtrar e exportar as informações conforme suas necessidades de análise e diagnóstico. Aproveite essa funcionalidade para conhecer melhor o seu sistema e solucionar problemas de forma mais eficiente!
 
+## Tema `rmdir`
+
+**Guia para Utilizar o Comando `rmdir` no Prompt de Comando do Windows**
+
+O comando `rmdir` (remove directory) é uma ferramenta do Prompt de Comando do Windows que permite remover diretórios (pastas) vazios do sistema de arquivos. Ele é útil quando você deseja excluir pastas que não contêm nenhum arquivo ou subpasta. A seguir, vamos aprender como utilizar o `rmdir` de forma prática:
+
+1. **Sintaxe Básica:**
+   Para utilizar o comando `rmdir`, digite o seguinte comando no Prompt de Comando:
+   ```
+   rmdir nome_do_diretorio
+   ```
+   Substitua "nome_do_diretorio" pelo nome da pasta que deseja remover. É importante destacar que o diretório precisa estar vazio para que o comando funcione.
+
