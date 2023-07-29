@@ -393,3 +393,15 @@ O comando `rmdir` (remove directory) é uma ferramenta do Prompt de Comando do W
    ```
    Substitua "nome_do_diretorio" pelo nome da pasta que deseja remover. É importante destacar que o diretório precisa estar vazio para que o comando funcione.
 
+2. **Remoção Recursiva:**
+   Caso queira remover um diretório que contenha arquivos ou subpastas, é necessário utilizar a opção `/s` (subdirs) para uma remoção recursiva. Isso permite que o `rmdir` exclua todos os arquivos e subdiretórios presentes no diretório especificado antes de removê-lo. A opção `/q` (quiet) pode ser usada para executar a exclusão sem a exibição de mensagens de confirmação:
+   ```
+   rmdir /s /q nome_do_diretorio
+   ```
+
+3. **Remoção de Diretórios com Espaços no Nome:**
+   Caso o nome do diretório contenha espaços, é necessário envolver o nome entre aspas para que o comando seja executado corretamente:
+   ```
+   rmdir /s /q "nome do diretorio"
+   ```
+
