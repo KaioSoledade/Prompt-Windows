@@ -405,3 +405,19 @@ O comando `rmdir` (remove directory) é uma ferramenta do Prompt de Comando do W
    rmdir /s /q "nome do diretorio"
    ```
 
+4. **Exemplo Prático:**
+   - Para remover um diretório vazio:
+     ```
+     rmdir pasta_vazia
+     ```
+   - Para remover um diretório com arquivos e subpastas:
+     ```
+     rmdir /s /q pasta_com_arquivos
+     ```
+   - Para remover um diretório com espaço no nome:
+     ```
+     rmdir /s /q "pasta com espaco"
+     ```
+
+O comando `rmdir` é uma ferramenta útil para remover diretórios vazios ou com seus conteúdos de forma rápida e eficiente através do Prompt de Comando do Windows. Lembre-se de tomar cuidado ao utilizar o comando, pois a exclusão é irreversível, e qualquer dado presente no diretório removido será perdido. Certifique-se sempre de ter um backup adequado antes de executar o `rmdir` para evitar a perda acidental de informações importantes.
+
