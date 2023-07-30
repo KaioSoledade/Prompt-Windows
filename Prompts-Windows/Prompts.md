@@ -451,3 +451,47 @@ O comando `shutdown` é uma ferramenta do Prompt de Comando do Windows que permi
    ```
    A opção `/a` indica que o comando será usado para cancelar o desligamento ou reinicialização programada.
 
+4. **Agendar o Desligamento ou Reinicialização:**
+   Para agendar o desligamento ou reinicialização do computador em um horário específico, você pode usar a opção `/t` (tempo) seguida de um valor em segundos ou usar a opção `/t` com a hora no formato HH:mm. Por exemplo, para desligar o computador após 1 hora, você pode usar o seguinte comando:
+   ```
+   shutdown /s /t 3600
+   ```
+   Para agendar o desligamento para ocorrer às 22:30, você pode usar o seguinte comando:
+   ```
+   shutdown /s /t 81000
+   ```
+
+5. **Mensagem de Aviso:**
+   Você também pode adicionar uma mensagem de aviso para os usuários antes do desligamento ou reinicialização utilizando a opção `/c` (comentário). Por exemplo:
+   ```
+   shutdown /s /t 300 /c "O computador será desligado em 5 minutos. Salve seu trabalho!"
+   ```
+
+6. **Exemplo Prático:**
+   - Desligar o computador imediatamente:
+     ```
+     shutdown /s /f /t 0
+     ```
+   - Reiniciar o computador imediatamente:
+     ```
+     shutdown /r /f /t 0
+     ```
+   - Cancelar o desligamento ou reinicialização:
+     ```
+     shutdown /a
+     ```
+   - Agendar o desligamento para ocorrer após 1 hora:
+     ```
+     shutdown /s /t 3600
+     ```
+   - Agendar o desligamento para ocorrer às 22:30:
+     ```
+     shutdown /s /t 81000
+     ```
+   - Desligar o computador em 5 minutos com uma mensagem de aviso:
+     ```
+     shutdown /s /t 300 /c "O computador será desligado em 5 minutos. Salve seu trabalho!"
+     ```
+
+O comando `shutdown` é uma ferramenta útil para realizar o desligamento ou reinicialização do computador de forma rápida e programada através do Prompt de Comando do Windows. Utilize as opções disponíveis para personalizar o processo de desligamento de acordo com suas necessidades e lembre-se de salvar seu trabalho antes de executar o comando para evitar perda de dados não salvos.
+
