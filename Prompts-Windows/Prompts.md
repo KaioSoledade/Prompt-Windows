@@ -421,3 +421,18 @@ O comando `rmdir` (remove directory) é uma ferramenta do Prompt de Comando do W
 
 O comando `rmdir` é uma ferramenta útil para remover diretórios vazios ou com seus conteúdos de forma rápida e eficiente através do Prompt de Comando do Windows. Lembre-se de tomar cuidado ao utilizar o comando, pois a exclusão é irreversível, e qualquer dado presente no diretório removido será perdido. Certifique-se sempre de ter um backup adequado antes de executar o `rmdir` para evitar a perda acidental de informações importantes.
 
+## Tema `shutdown`
+
+**Guia para Utilizar o Comando `shutdown` no Prompt de Comando do Windows**
+
+O comando `shutdown` é uma ferramenta do Prompt de Comando do Windows que permite desligar, reiniciar, fazer logoff ou agendar o desligamento do computador. Ele oferece diversas opções que permitem personalizar o processo de desligamento de acordo com as necessidades do usuário. A seguir, vamos aprender como utilizar o `shutdown` de forma prática:
+
+1. **Desligar o Computador Imediatamente:**
+   Para desligar o computador imediatamente, digite o seguinte comando no Prompt de Comando:
+   ```
+   shutdown /s /f /t 0
+   ```
+   - A opção `/s` indica que o comando será usado para desligar o computador.
+   - A opção `/f` força o fechamento de todos os programas em execução sem avisar o usuário.
+   - A opção `/t 0` define um tempo de espera de 0 segundos, o que significa que o desligamento ocorrerá imediatamente.
+
