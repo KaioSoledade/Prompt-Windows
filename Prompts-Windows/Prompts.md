@@ -436,3 +436,18 @@ O comando `shutdown` é uma ferramenta do Prompt de Comando do Windows que permi
    - A opção `/f` força o fechamento de todos os programas em execução sem avisar o usuário.
    - A opção `/t 0` define um tempo de espera de 0 segundos, o que significa que o desligamento ocorrerá imediatamente.
 
+2. **Reiniciar o Computador Imediatamente:**
+   Para reiniciar o computador imediatamente, digite o seguinte comando no Prompt de Comando:
+   ```
+   shutdown /r /f /t 0
+   ```
+   - A opção `/r` indica que o comando será usado para reiniciar o computador.
+   - As opções `/f` e `/t 0` têm a mesma função de forçar o fechamento dos programas e definir o tempo de espera como 0 segundos, realizando o reinício imediatamente.
+
+3. **Cancelar o Desligamento ou Reinicialização:**
+   Caso tenha utilizado o comando `shutdown` para desligar ou reiniciar o computador, mas deseja cancelar a operação, você pode usar o seguinte comando no Prompt de Comando:
+   ```
+   shutdown /a
+   ```
+   A opção `/a` indica que o comando será usado para cancelar o desligamento ou reinicialização programada.
+
