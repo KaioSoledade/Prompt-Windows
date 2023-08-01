@@ -534,3 +534,7 @@ O comando `date` é uma ferramenta do Prompt de Comando do Windows que permite e
      date 04/07/2023
      ```
 
+É importante mencionar que a alteração da data do sistema requer permissões de administrador. Caso você não possua essas permissões, o comando `date` não permitirá a alteração e exibirá uma mensagem de erro informando que as permissões são insuficientes.
+
+O comando `date` é útil para verificar a data atual do sistema e, se necessário, realizar ajustes na data do computador. Porém, tome cuidado ao alterar a data, pois isso pode causar problemas em programas e aplicativos que dependem de datas corretas para funcionar corretamente. Sempre verifique se a alteração é necessária e tenha cuidado ao modificar as configurações de data e hora do sistema.
+
