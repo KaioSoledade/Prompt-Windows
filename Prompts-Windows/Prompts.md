@@ -508,3 +508,29 @@ O comando `date` é uma ferramenta do Prompt de Comando do Windows que permite e
    ```
    O comando retornará a data atual no formato definido nas configurações regionais do Windows.
 
+2. **Alterar a Data:**
+   Caso você tenha permissões de administrador, é possível alterar a data do sistema utilizando o comando `date` seguido da nova data no formato "dd-mm-aa" (dia-mês-ano). Por exemplo, para definir a data como 04 de julho de 2023, você pode usar o seguinte comando:
+   ```
+   date 04-07-23
+   ```
+
+3. **Formato de Data Personalizado:**
+   O comando `date` também permite utilizar formatos de data personalizados, desde que você tenha permissões de administrador. Por exemplo, para definir a data no formato "dd/mm/aaaa", você pode usar o seguinte comando:
+   ```
+   date 04/07/2023
+   ```
+
+4. **Exemplo Prático:**
+   - Para exibir a data atual:
+     ```
+     date
+     ```
+   - Para alterar a data para 04 de julho de 2023:
+     ```
+     date 04-07-23
+     ```
+   - Para alterar a data para 04 de julho de 2023 no formato "dd/mm/aaaa":
+     ```
+     date 04/07/2023
+     ```
+
