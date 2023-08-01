@@ -495,3 +495,16 @@ O comando `shutdown` é uma ferramenta do Prompt de Comando do Windows que permi
 
 O comando `shutdown` é uma ferramenta útil para realizar o desligamento ou reinicialização do computador de forma rápida e programada através do Prompt de Comando do Windows. Utilize as opções disponíveis para personalizar o processo de desligamento de acordo com suas necessidades e lembre-se de salvar seu trabalho antes de executar o comando para evitar perda de dados não salvos.
 
+## Tema `Date`
+
+**Guia para Utilizar o Comando `date` no Prompt de Comando do Windows**
+
+O comando `date` é uma ferramenta do Prompt de Comando do Windows que permite exibir a data atual do sistema e também permite alterar a data caso o usuário tenha permissões de administrador. A seguir, vamos aprender como utilizar o `date` de forma prática:
+
+1. **Exibir a Data Atual:**
+   Para exibir a data atual do sistema, digite o seguinte comando no Prompt de Comando:
+   ```
+   date
+   ```
+   O comando retornará a data atual no formato definido nas configurações regionais do Windows.
+
