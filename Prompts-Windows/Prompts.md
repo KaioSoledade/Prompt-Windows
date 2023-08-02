@@ -548,3 +548,27 @@ Um arquivo de lote do Windows, também conhecido como arquivo .bat, é um script
 1. Pressione a tecla "Windows + R" no teclado para abrir a caixa de diálogo "Executar".
 2. Digite "notepad" e clique em "OK". Isso abrirá o Bloco de Notas do Windows.
 
+**Passo 2: Escrevendo o Conjunto de Comandos**
+1. No Bloco de Notas, escreva os comandos do CMD que você deseja executar no arquivo .bat. Por exemplo:
+   ```
+   @echo off
+   echo "Olá, este é um arquivo .bat!"
+   echo "Pressione qualquer tecla para continuar..."
+   pause
+   ipconfig
+   ```
+
+2. O exemplo acima contém os seguintes comandos:
+   - `@echo off`: Desativa a exibição dos comandos no prompt de comando, exibindo apenas os resultados.
+   - `echo "Olá, este é um arquivo .bat!"`: Exibe uma mensagem de boas-vindas no prompt de comando.
+   - `echo "Pressione qualquer tecla para continuar..."`: Exibe uma mensagem de instrução para o usuário.
+   - `pause`: Pausa a execução do arquivo .bat e aguarda que o usuário pressione qualquer tecla para continuar.
+   - `ipconfig`: Exibe informações sobre a configuração de rede do computador.
+
+**Passo 3: Salvando o Arquivo .bat**
+1. No Bloco de Notas, clique em "Arquivo" e selecione "Salvar Como...".
+2. Navegue até a pasta onde deseja salvar o arquivo .bat.
+3. No campo "Nome do arquivo", digite um nome para o arquivo, seguido da extensão ".bat". Por exemplo, "meu_script.bat".
+4. Certifique-se de selecionar "Todos os arquivos (*.*)" no campo "Salvar como tipo".
+5. Clique em "Salvar" para salvar o arquivo .bat.
+
