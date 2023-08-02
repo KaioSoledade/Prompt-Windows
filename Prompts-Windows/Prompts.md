@@ -636,3 +636,18 @@ O comando `find` é uma ferramenta útil do Prompt de Comando do Windows que per
    find "exemplo" arquivo1.txt arquivo2.txt arquivo3.txt
    ```
 
+**5. Busca em Subdiretórios:**
+   Caso você queira fazer uma busca em todos os arquivos de texto dentro de um diretório e seus subdiretórios, utilize o seguinte comando:
+   ```
+   find "exemplo" *.txt /S
+   ```
+   - Neste exemplo, o `/S` indica que a busca deve ser feita em todos os subdiretórios.
+
+**6. Outras Observações:**
+   - Se o comando `find` encontrar o texto pesquisado no arquivo, ele exibirá a linha completa contendo a ocorrência.
+   - Caso o comando não encontre o texto, nenhum resultado será exibido no Prompt de Comando.
+   - O comando `find` é sensível a acentos e caracteres especiais. Certifique-se de inserir o texto de pesquisa exatamente como ele aparece no arquivo.
+   - Para mais informações sobre as opções disponíveis, digite `find /?` no Prompt de Comando.
+
+O comando `find` é uma ferramenta poderosa para localizar informações específicas em arquivos de texto. Ele pode ser útil em diversas situações, como busca de palavras-chave em logs, filtragem de conteúdo em arquivos de configuração e muito mais. Experimente-o em diferentes contextos para otimizar seu uso e facilitar suas pesquisas de dados nos arquivos do seu sistema.
+
