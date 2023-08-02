@@ -585,3 +585,19 @@ Um arquivo de lote do Windows, também conhecido como arquivo .bat, é um script
 - Sempre verifique os comandos que serão incluídos no arquivo .bat e certifique-se de que eles não causarão danos ao sistema ou a perda de dados importantes.
 - É recomendável fazer um backup dos arquivos importantes antes de executar qualquer arquivo .bat, especialmente se ele incluir comandos que possam afetar arquivos e configurações do sistema.
 
+## Tema `find`
+
+**Guia para Utilizar o Comando `find` no Prompt de Comando do Windows**
+
+O comando `find` é uma ferramenta útil do Prompt de Comando do Windows que permite localizar uma sequência específica de texto em arquivos ou diretórios. Ele é bastante útil para pesquisar conteúdos em arquivos de texto, realizar buscas por palavras-chave ou identificar ocorrências de determinada informação em um conjunto de arquivos. A seguir, vamos aprender como usar o comando `find` de forma prática:
+
+**1. Sintaxe Básica:**
+   O comando `find` é utilizado com a seguinte sintaxe básica:
+   ```
+   find "texto_a_ser_pesquisado" arquivo.txt
+   ```
+   - `"texto_a_ser_pesquisado"`: Substitua pelo texto que você deseja pesquisar nos arquivos.
+   - `arquivo.txt`: Substitua pelo nome do arquivo em que deseja fazer a busca.
+
+
+
