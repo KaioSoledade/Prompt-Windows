@@ -538,3 +538,13 @@ O comando `date` é uma ferramenta do Prompt de Comando do Windows que permite e
 
 O comando `date` é útil para verificar a data atual do sistema e, se necessário, realizar ajustes na data do computador. Porém, tome cuidado ao alterar a data, pois isso pode causar problemas em programas e aplicativos que dependem de datas corretas para funcionar corretamente. Sempre verifique se a alteração é necessária e tenha cuidado ao modificar as configurações de data e hora do sistema.
 
+## Tema `.bat`
+
+**Guia para Criar e Executar um Arquivo .bat no Bloco de Notas com um Conjunto de Comandos no CMD do Windows**
+
+Um arquivo de lote do Windows, também conhecido como arquivo .bat, é um script que contém um conjunto de comandos do CMD (Prompt de Comando) do Windows. Esses arquivos são usados para automatizar tarefas repetitivas ou para executar várias operações em sequência. A seguir, vamos aprender como criar e executar um arquivo .bat no Bloco de Notas com um conjunto de comandos do CMD do Windows:
+
+**Passo 1: Abrindo o Bloco de Notas**
+1. Pressione a tecla "Windows + R" no teclado para abrir a caixa de diálogo "Executar".
+2. Digite "notepad" e clique em "OK". Isso abrirá o Bloco de Notas do Windows.
+
