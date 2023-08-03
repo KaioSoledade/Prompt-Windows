@@ -651,3 +651,12 @@ O comando `find` é uma ferramenta útil do Prompt de Comando do Windows que per
 
 O comando `find` é uma ferramenta poderosa para localizar informações específicas em arquivos de texto. Ele pode ser útil em diversas situações, como busca de palavras-chave em logs, filtragem de conteúdo em arquivos de configuração e muito mais. Experimente-o em diferentes contextos para otimizar seu uso e facilitar suas pesquisas de dados nos arquivos do seu sistema.
 
+## Tema `exit`
+
+**Guia para Utilizar o Comando `exit` no Prompt de Comando do Windows**
+
+O comando `exit` é uma instrução do Prompt de Comando do Windows que permite encerrar a execução do próprio prompt ou de um arquivo de lote (arquivo .bat) que está sendo executado. É uma forma de sair do prompt de comando ou encerrar um script após a execução de determinadas tarefas. A seguir, vamos aprender como utilizar o comando `exit` de forma prática:
+
+**1. Encerrando o Prompt de Comando:**
+   Para encerrar o próprio Prompt de Comando, basta digitar `exit` no prompt e pressionar a tecla "Enter". Isso fechará a janela do prompt e encerrará a sessão atual.
+
