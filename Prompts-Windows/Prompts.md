@@ -695,3 +695,10 @@ O comando `exit` é uma instrução do Prompt de Comando do Windows que permite 
 
    Neste exemplo, o comando `if not exist arquivo.txt` verifica se o arquivo "arquivo.txt" não existe no diretório atual. Caso a condição seja verdadeira, o script exibirá a mensagem de erro e utilizará `exit 1` para indicar uma saída com código 1, que representa uma condição de erro.
 
+**4. Observações Importantes:**
+   - O comando `exit` é especialmente útil para encerrar a execução de arquivos de lote após a conclusão das tarefas programadas.
+   - É importante definir códigos de saída adequados em scripts, principalmente quando esses scripts são utilizados em automações ou integrações com outros sistemas.
+   - Para verificar o código de saída de um arquivo de lote após a execução, você pode usar a variável especial `%ERRORLEVEL%`. Por exemplo, após a execução de um script, digite `echo %ERRORLEVEL%` no prompt para visualizar o código de saída.
+
+O comando `exit` é uma forma simples e eficaz de controlar a execução de um prompt de comando ou de um arquivo de lote, permitindo finalizar tarefas, indicar condições de erro e fornecer feedback sobre o resultado da execução.
+
