@@ -660,3 +660,38 @@ O comando `exit` é uma instrução do Prompt de Comando do Windows que permite 
 **1. Encerrando o Prompt de Comando:**
    Para encerrar o próprio Prompt de Comando, basta digitar `exit` no prompt e pressionar a tecla "Enter". Isso fechará a janela do prompt e encerrará a sessão atual.
 
+**2. Encerrando um Arquivo de Lote (Script .bat):**
+   O comando `exit` também é amplamente utilizado em arquivos de lote (scripts .bat) para controlar a execução do script e finalizá-lo quando necessário. Por exemplo, considere o seguinte script:
+
+   ```
+   @echo off
+   echo "Este é um arquivo de lote."
+   echo "Pressione qualquer tecla para continuar..."
+   pause
+   echo "Fim do arquivo de lote."
+   exit
+   ```
+
+   Neste exemplo, após a exibição da mensagem "Fim do arquivo de lote.", o comando `exit` é utilizado para finalizar a execução do script.
+
+**3. Uso de Códigos de Saída:**
+   O comando `exit` pode ser utilizado para definir um código de saída personalizado que indica o resultado da execução do script. Por padrão, o código de saída é zero, que indica sucesso na execução. No entanto, podemos definir um código de saída diferente para indicar erros ou outras condições específicas. Por exemplo:
+
+   ```
+   @echo off
+   echo "Este é um arquivo de lote."
+   echo "Pressione qualquer tecla para continuar..."
+   pause
+
+   rem Simulando uma condição de erro
+   if not exist arquivo.txt (
+       echo "Erro: arquivo.txt não encontrado."
+       exit 1
+   )
+
+   echo "Fim do arquivo de lote."
+   exit 0
+   ```
+
+   Neste exemplo, o comando `if not exist arquivo.txt` verifica se o arquivo "arquivo.txt" não existe no diretório atual. Caso a condição seja verdadeira, o script exibirá a mensagem de erro e utilizará `exit 1` para indicar uma saída com código 1, que representa uma condição de erro.
+
