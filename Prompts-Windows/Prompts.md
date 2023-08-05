@@ -702,3 +702,27 @@ O comando `exit` é uma instrução do Prompt de Comando do Windows que permite 
 
 O comando `exit` é uma forma simples e eficaz de controlar a execução de um prompt de comando ou de um arquivo de lote, permitindo finalizar tarefas, indicar condições de erro e fornecer feedback sobre o resultado da execução.
 
+## Tema `tar`
+**Guia para Utilizar o Comando `tar` no Prompt de Comando do Windows**
+
+O comando `tar` é uma ferramenta de linha de comando utilizada para trabalhar com arquivos compactados em formato "tar" no Prompt de Comando do Windows. O "tar" é um formato de arquivo amplamente utilizado em sistemas Unix/Linux para agrupar e comprimir arquivos ou diretórios. Neste guia, vamos aprender como usar o comando `tar` no Prompt de Comando do Windows para compactar e descompactar arquivos no formato "tar":
+
+**1. Sintaxe Básica:**
+   O comando `tar` é utilizado com a seguinte sintaxe básica:
+   ```
+   tar opção arquivo_destino arquivo1 arquivo2 ...
+   ```
+   - `opção`: Indica a operação a ser realizada. As principais opções são:
+     - `-c`: Criar um arquivo compactado (tarball).
+     - `-x`: Extrair arquivos de um arquivo compactado.
+     - `-t`: Listar o conteúdo de um arquivo compactado.
+   - `arquivo_destino`: Nome do arquivo compactado a ser criado ou extraído.
+   - `arquivo1`, `arquivo2`, ...: Nomes dos arquivos ou diretórios a serem incluídos no arquivo compactado.
+
+**2. Criar um Arquivo Compactado (tarball):**
+   Para criar um arquivo compactado (tarball), utilize a opção `-c` seguida do nome do arquivo compactado que você deseja criar e os arquivos ou diretórios que deseja incluir no tarball. Por exemplo:
+   ```
+   tar -cf arquivo.tar arquivo1.txt pasta1 arquivo2.txt
+   ```
+   - Neste exemplo, o comando criará um arquivo chamado "arquivo.tar" contendo os arquivos "arquivo1.txt", "pasta1" e "arquivo2.txt".
+
