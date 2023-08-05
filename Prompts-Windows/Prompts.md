@@ -726,3 +726,17 @@ O comando `tar` é uma ferramenta de linha de comando utilizada para trabalhar c
    ```
    - Neste exemplo, o comando criará um arquivo chamado "arquivo.tar" contendo os arquivos "arquivo1.txt", "pasta1" e "arquivo2.txt".
 
+**3. Extrair Arquivos de um Arquivo Compactado:**
+   Para extrair arquivos de um arquivo compactado, utilize a opção `-x` seguida do nome do arquivo compactado. Por exemplo:
+   ```
+   tar -xf arquivo.tar
+   ```
+   - Neste exemplo, o comando extrairá os arquivos contidos no arquivo "arquivo.tar" para o diretório atual.
+
+**4. Listar o Conteúdo de um Arquivo Compactado:**
+   Para listar o conteúdo de um arquivo compactado, utilize a opção `-t` seguida do nome do arquivo compactado. Por exemplo:
+   ```
+   tar -tf arquivo.tar
+   ```
+   - Neste exemplo, o comando exibirá a lista de arquivos e diretórios contidos no arquivo "arquivo.tar".
+
