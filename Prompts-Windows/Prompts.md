@@ -831,3 +831,27 @@ O comando `set` é uma ferramenta poderosa no Prompt de Comando do Windows que p
    - `variavel`: Nome da variável que será criada ou atualizada.
    - `valor`: Valor que será atribuído à variável.
 
+**2. Criar e Atribuir Valor a uma Variável:**
+   Para criar uma nova variável de ambiente, basta utilizar o comando `set` seguido do nome da variável e do valor que desejamos atribuir a ela. Por exemplo:
+   ```
+   set nome=João
+   ```
+
+   - Neste exemplo, a variável `nome` foi criada e recebeu o valor "João".
+
+**3. Acessar o Valor de uma Variável:**
+   Para acessar o valor de uma variável, basta utilizar `%` antes e depois do nome da variável. Por exemplo:
+   ```
+   echo %nome%
+   ```
+
+   - O comando `echo` é utilizado para exibir o valor da variável `nome`.
+
+**4. Atualizar o Valor de uma Variável:**
+   Para atualizar o valor de uma variável, basta utilizar novamente o comando `set` com o mesmo nome da variável, seguido do novo valor. Por exemplo:
+   ```
+   set nome=Maria
+   ```
+
+   - Neste exemplo, a variável `nome` foi atualizada e agora possui o valor "Maria".
+
