@@ -855,3 +855,41 @@ O comando `set` é uma ferramenta poderosa no Prompt de Comando do Windows que p
 
    - Neste exemplo, a variável `nome` foi atualizada e agora possui o valor "Maria".
 
+**5. Apagar uma Variável:**
+   Para apagar uma variável de ambiente, utilize o comando `set` sem especificar um valor. Por exemplo:
+   ```
+   set nome=
+   ```
+
+   - Neste exemplo, a variável `nome` foi apagada e não possui mais valor.
+
+**6. Utilizando Variáveis em Comandos:**
+   As variáveis de ambiente podem ser utilizadas em diversos comandos. Por exemplo:
+   ```
+   set nome=João
+   echo Olá, %nome%! Bem-vindo ao CMD!
+   ```
+
+   - Neste exemplo, a variável `nome` foi utilizada no comando `echo` para exibir a mensagem personalizada.
+
+**7. Escopo das Variáveis:**
+   As variáveis criadas com o comando `set` têm um escopo local dentro da sessão do Prompt de Comando em que foram definidas. Ou seja, elas existem apenas durante a execução do Prompt e não são salvas permanentemente no sistema.
+
+**8. Variáveis Especiais:**
+   O Prompt de Comando possui algumas variáveis especiais que representam informações do sistema, como `%USERNAME%` (nome do usuário atual), `%CD%` (diretório atual), `%DATE%` (data atual) e `%TIME%` (horário atual).
+
+**9. Conjuntos de Comandos em Blocos:**
+   É possível utilizar variáveis em conjuntos de comandos em blocos, delimitados por parênteses. Por exemplo:
+   ```
+   set x=10
+   if %x% equ 10 (
+       echo A variável x é igual a 10.
+   ) else (
+       echo A variável x não é igual a 10.
+   )
+   ```
+
+   - Neste exemplo, o valor da variável `x` é verificado e uma mensagem apropriada é exibida.
+
+O comando `set` é uma ferramenta essencial para manipular informações e criar scripts mais interativos e dinâmicos no Prompt de Comando do Windows. Com ele, você pode armazenar valores temporários, automatizar tarefas e personalizar a execução de comandos de acordo com a necessidade.
+
