@@ -816,3 +816,18 @@ O comando `if` é uma ferramenta poderosa no Prompt de Comando do Windows que pe
 
 O comando `if` é fundamental para controlar o fluxo de execução de comandos no Prompt de Comando do Windows, permitindo que você crie scripts mais dinâmicos e eficientes com base em condições específicas. Com ele, você pode automatizar tarefas complexas e criar soluções personalizadas para suas necessidades.
 
+## Tema `set`
+
+**Guia para Utilizar o Comando `set` no Prompt de Comando do Windows**
+
+O comando `set` é uma ferramenta poderosa no Prompt de Comando do Windows que permite criar e manipular variáveis de ambiente. As variáveis de ambiente são espaços de armazenamento temporários que podem conter informações, como valores de texto ou números, que podem ser usados em scripts e comandos. Neste guia, vamos aprender como usar o comando `set` no Prompt de Comando do Windows para criar e trabalhar com variáveis de ambiente:
+
+**1. Sintaxe Básica do Comando `set`:**
+   O comando `set` é utilizado com a seguinte sintaxe básica:
+   ```
+   set variavel=valor
+   ```
+
+   - `variavel`: Nome da variável que será criada ou atualizada.
+   - `valor`: Valor que será atribuído à variável.
+
