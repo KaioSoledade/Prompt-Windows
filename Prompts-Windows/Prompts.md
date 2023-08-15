@@ -893,3 +893,26 @@ O comando `set` é uma ferramenta poderosa no Prompt de Comando do Windows que p
 
 O comando `set` é uma ferramenta essencial para manipular informações e criar scripts mais interativos e dinâmicos no Prompt de Comando do Windows. Com ele, você pode armazenar valores temporários, automatizar tarefas e personalizar a execução de comandos de acordo com a necessidade.
 
+## Tema `echo`
+
+**Guia para Utilizar o Comando `echo` no Prompt de Comando do Windows**
+
+O comando `echo` é uma ferramenta simples, porém bastante útil, no Prompt de Comando do Windows. Ele é utilizado para exibir mensagens de texto, valores de variáveis, ou até mesmo redirecionar informações para um arquivo. Neste guia, aprenderemos como utilizar o comando `echo` e suas funcionalidades:
+
+**1. Exibir Mensagens de Texto:**
+   O uso mais básico do comando `echo` é para exibir mensagens de texto no prompt. Para isso, basta digitar o comando `echo` seguido do texto entre aspas. Por exemplo:
+   ```
+   echo "Olá, seja bem-vindo ao CMD!"
+   ```
+
+   - Neste exemplo, a mensagem "Olá, seja bem-vindo ao CMD!" será exibida no prompt.
+
+**2. Exibir Variáveis:**
+   O `echo` também pode ser utilizado para exibir o valor de variáveis de ambiente. Para isso, basta utilizar `%` antes e depois do nome da variável. Por exemplo:
+   ```
+   set nome=João
+   echo %nome%
+   ```
+
+   - Neste exemplo, o valor da variável `nome` (que é "João") será exibido no prompt.
+
