@@ -932,3 +932,29 @@ O comando `echo` é uma ferramenta simples, porém bastante útil, no Prompt de 
 
    - Neste exemplo, a mensagem será adicionada ao final do arquivo "arquivo.txt".
 
+**5. Exibir Mensagens sem Quebra de Linha:**
+   Por padrão, o comando `echo` inclui uma quebra de linha no final da mensagem. Se você quiser exibir uma mensagem sem essa quebra de linha, utilize o parâmetro especial `/n`. Por exemplo:
+   ```
+   echo Esta é uma mensagem sem quebra de linha/n
+   ```
+
+   - Neste exemplo, a mensagem será exibida sem a quebra de linha.
+
+**6. Habilitar e Desabilitar o Comando `echo`:**
+   Para habilitar ou desabilitar a exibição dos comandos no prompt do Windows, utilize o comando `echo on` ou `echo off`, respectivamente. Por exemplo:
+   ```
+   echo off
+   ```
+
+   - Neste exemplo, os comandos subsequentes não serão exibidos no prompt.
+
+**7. Exibir Caracteres Especiais:**
+   Para exibir caracteres especiais, como `<`, `>`, `|`, `&`, entre outros, utilize o símbolo `^` antes do caractere. Por exemplo:
+   ```
+   echo O sinal de maior que é representado por ^>
+   ```
+
+   - Neste exemplo, o sinal `>` será exibido como texto e não será interpretado como redirecionamento de arquivo.
+
+O comando `echo` é uma ferramenta simples, porém versátil, que permite exibir informações no prompt do Windows, trabalhar com variáveis e redirecionar saídas para arquivos. Com ele, você pode personalizar suas mensagens, automatizar tarefas e realizar diversas operações no Prompt de Comando do Windows.
+
