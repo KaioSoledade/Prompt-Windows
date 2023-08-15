@@ -916,3 +916,19 @@ O comando `echo` é uma ferramenta simples, porém bastante útil, no Prompt de 
 
    - Neste exemplo, o valor da variável `nome` (que é "João") será exibido no prompt.
 
+**3. Redirecionar Saída para um Arquivo:**
+   É possível redirecionar a saída do comando `echo` para um arquivo. Para fazer isso, utilize o símbolo `>` seguido do nome do arquivo. Por exemplo:
+   ```
+   echo "Esta mensagem será gravada em um arquivo." > arquivo.txt
+   ```
+
+   - Neste exemplo, a mensagem será gravada no arquivo "arquivo.txt" em vez de ser exibida no prompt.
+
+**4. Anexar Saída a um Arquivo Existente:**
+   Se você quiser adicionar a saída do comando `echo` a um arquivo existente sem substituí-lo, utilize o símbolo `>>`. Por exemplo:
+   ```
+   echo "Esta mensagem será adicionada ao arquivo." >> arquivo.txt
+   ```
+
+   - Neste exemplo, a mensagem será adicionada ao final do arquivo "arquivo.txt".
+
