@@ -967,3 +967,14 @@ O comando `SETX` é uma ferramenta útil no prompt de comando do Windows para de
 **1. Acessando o Prompt de Comando:**
 Para começar, abra o Prompt de Comando do Windows. Para fazer isso, pressione a tecla "Windows + R" para abrir a caixa de diálogo "Executar". Em seguida, digite "cmd" e pressione "Enter" ou clique em "OK". O Prompt de Comando será aberto e estará pronto para receber comandos.
 
+**2. Sintaxe do Comando SETX:**
+A sintaxe básica do comando `SETX` é a seguinte:
+
+```
+SETX variavel valor /M
+```
+
+- `variavel`: Especifique o nome da variável de ambiente que deseja definir.
+- `valor`: Indique o valor que deseja atribuir à variável de ambiente.
+- `/M`: (opcional) Esse modificador indica que a variável deve ser definida no ambiente do sistema (globalmente) em vez do ambiente do usuário atual. Requer privilégios administrativos.
+
