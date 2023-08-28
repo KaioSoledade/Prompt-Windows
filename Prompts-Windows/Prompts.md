@@ -978,3 +978,23 @@ SETX variavel valor /M
 - `valor`: Indique o valor que deseja atribuir à variável de ambiente.
 - `/M`: (opcional) Esse modificador indica que a variável deve ser definida no ambiente do sistema (globalmente) em vez do ambiente do usuário atual. Requer privilégios administrativos.
 
+**3. Exemplos de Uso:**
+
+3.1. Definir uma variável de ambiente:
+Para criar uma variável de ambiente usando o comando `SETX`, siga este exemplo:
+
+```
+SETX MEU_CAMINHO "C:\Caminho\para\seu\diretorio"
+```
+
+Isso criará uma variável chamada `MEU_CAMINHO` com o valor `C:\Caminho\para\seu\diretorio`.
+
+3.2. Definir uma variável de ambiente no ambiente do sistema:
+Se você deseja criar uma variável de ambiente globalmente, acessível por todos os usuários no sistema, utilize o modificador `/M`, mas lembre-se de que isso requer privilégios administrativos:
+
+```
+SETX MINHA_VARIAVEL "Valor da minha variável" /M
+```
+
+Isso criará a variável de ambiente chamada `MINHA_VARIAVEL` disponível para todos os usuários no sistema.
+
