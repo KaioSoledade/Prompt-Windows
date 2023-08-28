@@ -998,3 +998,13 @@ SETX MINHA_VARIAVEL "Valor da minha variável" /M
 
 Isso criará a variável de ambiente chamada `MINHA_VARIAVEL` disponível para todos os usuários no sistema.
 
+**4. Importante Saber:**
+
+- Após usar o comando `SETX`, as alterações não serão visíveis no Prompt de Comando atual, pois ele não carrega as alterações das variáveis de ambiente em tempo real. Para acessar as alterações, você pode abrir um novo Prompt de Comando.
+- Tome cuidado ao modificar variáveis de ambiente importantes do sistema, pois isso pode afetar o funcionamento do sistema operacional e de outros programas.
+- Para excluir uma variável de ambiente, você pode usar o comando `SETX` novamente, mas defina o valor como vazio. Por exemplo: `SETX MEU_CAMINHO ""` irá remover a variável `MEU_CAMINHO`.
+
+**5. Conclusão:**
+
+O comando `SETX` é uma ferramenta útil para definir variáveis de ambiente permanentes no Windows. Ele permite que você armazene informações importantes para uso de programas e scripts, garantindo que essas variáveis estejam disponíveis sempre que você usar o computador. Lembre-se de tomar cuidado ao modificar variáveis de ambiente críticas do sistema e, se possível, crie backups antes de realizar alterações significativas. Agora você está pronto para usar o `SETX` no Prompt de Comando do Windows!
+
