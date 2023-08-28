@@ -958,3 +958,12 @@ O comando `echo` é uma ferramenta simples, porém bastante útil, no Prompt de 
 
 O comando `echo` é uma ferramenta simples, porém versátil, que permite exibir informações no prompt do Windows, trabalhar com variáveis e redirecionar saídas para arquivos. Com ele, você pode personalizar suas mensagens, automatizar tarefas e realizar diversas operações no Prompt de Comando do Windows.
 
+## Tema `setx`
+
+**Guia de Uso do comando SETX no Windows**
+
+O comando `SETX` é uma ferramenta útil no prompt de comando do Windows para definir variáveis de ambiente permanentes. Variáveis de ambiente são valores que podem ser acessados por vários programas em seu sistema operacional. O `SETX` permite que você defina essas variáveis permanentemente, de modo que elas persistam mesmo após reiniciar o computador. Neste guia, você aprenderá a usar o `SETX` para criar e modificar variáveis de ambiente no Windows.
+
+**1. Acessando o Prompt de Comando:**
+Para começar, abra o Prompt de Comando do Windows. Para fazer isso, pressione a tecla "Windows + R" para abrir a caixa de diálogo "Executar". Em seguida, digite "cmd" e pressione "Enter" ou clique em "OK". O Prompt de Comando será aberto e estará pronto para receber comandos.
+
