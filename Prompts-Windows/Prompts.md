@@ -1012,3 +1012,7 @@ O comando `SETX` é uma ferramenta útil para definir variáveis de ambiente per
 
 **Guia de Uso do PATH no CMD do Windows**
 
+**O que é o PATH?**
+
+No contexto do Windows e do prompt de comando (CMD), o PATH é uma variável de ambiente que especifica uma lista de diretórios onde o sistema operacional procura por executáveis de programas quando você digita um comando no prompt de comando. Quando você digita um comando, como "ping" ou "python", o sistema procura nos diretórios listados no PATH para encontrar o executável correspondente e, se encontrado, executa o programa.
+
