@@ -1008,3 +1008,7 @@ Isso criará a variável de ambiente chamada `MINHA_VARIAVEL` disponível para t
 
 O comando `SETX` é uma ferramenta útil para definir variáveis de ambiente permanentes no Windows. Ele permite que você armazene informações importantes para uso de programas e scripts, garantindo que essas variáveis estejam disponíveis sempre que você usar o computador. Lembre-se de tomar cuidado ao modificar variáveis de ambiente críticas do sistema e, se possível, crie backups antes de realizar alterações significativas. Agora você está pronto para usar o `SETX` no Prompt de Comando do Windows!
 
+## Tema `path`
+
+**Guia de Uso do PATH no CMD do Windows**
+
