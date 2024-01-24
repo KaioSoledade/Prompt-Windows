@@ -1026,3 +1026,9 @@ Antes de fazer alterações no PATH, é útil verificar o valor atual para garan
 
 1. Abra o Prompt de Comando do Windows: Pressione a tecla "Windows + R", digite "cmd" e pressione "Enter".
 
+2. No prompt de comando, digite o seguinte comando e pressione "Enter":
+
+```
+echo %PATH%
+```
+
