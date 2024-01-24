@@ -1020,3 +1020,9 @@ No contexto do Windows e do prompt de comando (CMD), o PATH é uma variável de 
 
 O PATH é uma parte fundamental do sistema operacional Windows, pois permite que você execute comandos e programas a partir de qualquer diretório, sem precisar digitar o caminho completo até o executável. Isso é especialmente útil quando você instala novos programas que desejam ser acessíveis globalmente. Em vez de sempre navegar até o diretório de instalação do programa para executá-lo, você pode simplesmente digitar o comando no prompt de comando e o sistema saberá onde encontrar o executável graças ao PATH.
 
+**Verificando o valor atual do PATH:**
+
+Antes de fazer alterações no PATH, é útil verificar o valor atual para garantir que você saiba o que está definido no momento. Para fazer isso, siga estes passos:
+
+1. Abra o Prompt de Comando do Windows: Pressione a tecla "Windows + R", digite "cmd" e pressione "Enter".
+
