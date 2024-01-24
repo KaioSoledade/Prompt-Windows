@@ -1032,3 +1032,9 @@ Antes de fazer alterações no PATH, é útil verificar o valor atual para garan
 echo %PATH%
 ```
 
+Isso exibirá a lista de diretórios que estão atualmente definidos no PATH.
+
+**Adicionando diretórios ao PATH temporariamente:**
+
+Para adicionar temporariamente um diretório ao PATH, você pode usar o seguinte comando:
+
