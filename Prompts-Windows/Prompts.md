@@ -1038,3 +1038,9 @@ Isso exibirá a lista de diretórios que estão atualmente definidos no PATH.
 
 Para adicionar temporariamente um diretório ao PATH, você pode usar o seguinte comando:
 
+```
+set PATH=%PATH%;C:\Caminho\para\seu\diretorio
+```
+
+Isso adicionará temporariamente o diretório "C:\Caminho\para\seu\diretorio" à lista de diretórios no PATH para a sessão atual do prompt de comando. No entanto, após fechar o prompt de comando, as alterações serão perdidas.
+
