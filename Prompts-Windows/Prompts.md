@@ -1054,3 +1054,7 @@ Para adicionar um diretório permanentemente ao PATH, siga estes passos:
 
 3. No canto superior esquerdo da janela, clique em "Configurações avançadas do sistema".
 
+4. Na janela "Propriedades do Sistema", clique na guia "Avançado".
+
+5. Clique no botão "Variáveis de Ambiente".
+
