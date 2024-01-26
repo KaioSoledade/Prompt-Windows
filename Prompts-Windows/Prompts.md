@@ -1044,3 +1044,9 @@ set PATH=%PATH%;C:\Caminho\para\seu\diretorio
 
 Isso adicionará temporariamente o diretório "C:\Caminho\para\seu\diretorio" à lista de diretórios no PATH para a sessão atual do prompt de comando. No entanto, após fechar o prompt de comando, as alterações serão perdidas.
 
+**Adicionando diretórios ao PATH permanentemente:**
+
+Para adicionar um diretório permanentemente ao PATH, siga estes passos:
+
+1. Abra o Painel de Controle do Windows.
+
