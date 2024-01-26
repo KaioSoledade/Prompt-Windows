@@ -1050,3 +1050,7 @@ Para adicionar um diretório permanentemente ao PATH, siga estes passos:
 
 1. Abra o Painel de Controle do Windows.
 
+2. Clique em "Sistema e Segurança" e, em seguida, em "Sistema".
+
+3. No canto superior esquerdo da janela, clique em "Configurações avançadas do sistema".
+
